@@ -29,34 +29,6 @@ class ViewController: UIViewController {
         } catch {
             // エラーハンドリング
         }
-
-        // ContentView SwiftUIビューのインスタンスを作成
-//        let contentView = ContentView().environment(\.managedObjectContext, CoreDataManager.shared.managedObjectContext)
-//
-//        // UIHostingControllerインスタンスを作成
-//        let hostingController = UIHostingController(rootView: contentView)
-//        hostingController.modalPresentationStyle = .fullScreen
-//
-//        present(hostingController, animated: true)
-        
-        
-//        // 子ビューコントローラとしてUIHostingControllerインスタンスを追加
-//        self.addChild(hostingController)
-//
-//        // UIHostingControllerのビューを、現在のビューコントローラのビューに追加
-//        self.view.addSubview(hostingController.view)
-//
-//        // Auto Layout制約を設定
-//        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            hostingController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
-//            hostingController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-//            hostingController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-//            hostingController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
-//        ])
-//
-//        // 子ビューコントローラとしての追加を完了
-//        hostingController.didMove(toParent: self)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -71,7 +43,6 @@ class ViewController: UIViewController {
         
         present(hostingController, animated: true)
     }
-
 }
 
 import SwiftUI
